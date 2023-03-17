@@ -13,4 +13,5 @@ This is the second project of the Web Development program at Practicum. It was c
 
 ## Plan on improving the project
 
-Add your ideas here :)
+Responsive Design: Adding responsive design elements would help the website to be viewed comfortably across different screen sizes and devices.
+Adding User Interactivity: Adding interactive elements like hover effects, animations, and transitions could make the website more engaging and fun to use.
