@@ -77,7 +77,7 @@
 
       <main class="content">
 
-        <section class="recipes" id="recipes-link">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -115,44 +115,62 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation-link">
+        <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
-          <form class="reservation__form">
+          <form class="reservation__form form">
             <fieldset class="form__fieldset">
-              <label for="name" class="form__label">Name*</label>
+              <label for="surname" class="form__label">Name*</label>
               <input
-                class="form__input"
                 type="text"
-                id="name"
-                placeholder="Name Surname"
-              />
-
-              <label for="number" class="form__label">Number of guests*</label>
-              <input
                 class="form__input"
-                type="number"
-                id="number"
-                placeholder="1-8"
+                name="surname"
+                id="surname"
+                placeholder="Name Surname"
+                required
               />
-
-              <label for="datetime" class="form__label">Date & time*</label>
-              <input class="form__input" type="datetime-local" id="datetime" />
-
+              <label for="guests" class="form__label">Number of guests*</label>
+              <input
+                type="number"
+                class="form__input"
+                min="1"
+                max="8"
+                name="guests"
+                id="guests"
+                placeholder="1-8"
+                required
+              />
+              <label for="time" class="form__label">Date & time*</label>
+              <input
+                type="datetime-local"
+                id="time"
+                class="form__input"
+                required
+              />
               <label for="email" class="form__label">Your email*</label>
               <input
-                class="form__input"
                 type="email"
+                class="form__input"
+                name="email"
                 id="email"
                 placeholder="email@email.com"
+                required
               />
+            </fieldset>
 
+            <fieldset class="form__fieldset">
               <button type="button" class="form__button">Book a table</button>
+              </fieldset>
 
-              <label class="form__checkbox">
-                <input type="checkbox" class="form__checkbox_invisible" />
-                <span class="form__checkbox_visible"> </span>
-                I agree with the terms of use
-              </label>
+            <fieldset class="form__fieldset">
+              <label for="terms" class="form__label form__label_type_checkbox">
+                <input
+                  type="checkbox"
+                  class="form__checkbox"
+                  name="terms"
+                  id="terms"
+                />
+                I agree with the terms of use</label
+              >
             </fieldset>
           </form>
         </section>
