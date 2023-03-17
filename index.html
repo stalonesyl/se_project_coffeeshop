@@ -119,13 +119,13 @@
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form">
             <fieldset class="form__fieldset">
-              <label for="surname" class="form__label">Name*</label>
+              <label for="fullname" class="form__label">Full Name*</label>
               <input
                 type="text"
                 class="form__input"
-                name="surname"
-                id="surname"
-                placeholder="Name Surname"
+                name="fullname"
+                id="fullname"
+                placeholder="John Doe"
                 required
               />
               <label for="guests" class="form__label">Number of guests*</label>
@@ -152,7 +152,7 @@
                 class="form__input"
                 name="email"
                 id="email"
-                placeholder="email@email.com"
+                placeholder="Email Address"
                 required
               />
             </fieldset>
@@ -176,16 +176,149 @@
         </section>
 
         <section class="menu" id="menu">
-
+          <h2 class="menu__title">Menu</h2>
+          <p class="menu__subtitle">
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
+          </p>
+          <div class="menu__cards">
+            <div class="card">
+              <h3 class="card__title">Filter</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Regular (12 oz)
+                  <span class="card__list-divider"></span>
+                  $1
+                </li>
+                <li class="card__list-item">
+                  Large (16 oz) <span class="card__list-divider"></span>
+                  $1.25
+                </li>
+                <li class="card__list-item">
+                  XL (20 oz) <span class="card__list-divider"></span>
+                  $1.5
+                </li>
+                <li class="card__list-item">
+                  Party-size (24 oz, decaf)
+                  <span class="card__list-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Iced Coffee (16 oz) <span class="card__list-divider"></span>
+                  $1.25
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Espresso</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Macchiato<span class="card__list-divider"></span>
+                  $2.25
+                </li>
+                <li class="card__list-item">
+                  Cortado<span class="card__list-divider"></span>
+                  $2.5
+                </li>
+                <li class="card__list-item">
+                  Mocha<span class="card__list-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Sunrise in the Bay Area (decaf)<span
+                    class="card__list-divider"
+                  ></span>
+                  $10
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Baked Goods</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Almond Croissant <span class="card__list-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Banana Bread <span class="card__list-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Key Lime Pie <span class="card__list-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Blue Velvet Cake<span class="card__list-divider"></span>
+                  $3.75
+                </li>
+                <li class="card__list-item">
+                  Web Cookie<span class="card__list-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Fresh Bug'uette<span class="card__list-divider"></span>
+                  $0.25
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section class="about" id="about">
+          <h2 class="about__title">About the coffee shop</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Our coffee shop is located in the Practicum Library's hall. It
+              features 6 tables and free WiFi.
+            </p>
 
+            <p class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </p>
+
+            <p class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </p>
+          </div>
+          <div class="about__circle"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
-      <footer class="footer">
 
+      <footer class="footer" id="contacts">
+        <div class="footer__content">
+          <img
+            src="./images/practicum_logo.svg"
+            class="footer__logo"
+            alt="Practicum footer logo"
+          />
+          <div class="footer__social">
+            <h4 class="footer__social-heading">Social media</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  class="footer__social-icon"
+                  alt="facebook icon"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  class="footer__social-icon"
+                  alt="instagram icon"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy; 2023 Stalone Sylvestre</p>
       </footer>
+
     </div>
   </body>
   </html>
